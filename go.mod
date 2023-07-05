@@ -1,4 +1,4 @@
-module github.com/otiai10/openaigo
+module github.com/mlbb220/openaigo
 
 go 1.18
 
