@@ -9,6 +9,7 @@ import (
 	"io"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 )
 
@@ -47,6 +48,7 @@ func NewClient(apikey string) *Client {
 		// Organization: org-GXjGDRs5UuJ4CvQ2u9d5uy0k
 		// BaseURL: DefaultOpenAIAPIURL,
 		// HTTPClient: http.DefaultClient,
+		BaseURL: os.Getenv("OPENAI_API_URL"),
 	}
 }
 
